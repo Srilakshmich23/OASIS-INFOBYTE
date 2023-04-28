@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<link rel="stylesheet" type="text/css" href="./temp_convt.css">
+</head>
+<body>
+	<div class="container">
+        <div align="center">
+		<h1>Temperature Converter</h1>
+		<div class="form">
+			<label for="celsius">Celsius:</label>
+			<input type="number" id="celsius" name="celsius"><br>
+			<label for="fahrenheit">Fahrenheit:</label>
+			<input type="number" id="fahrenheit" name="fahrenheit"><br>
+			<label for="kelvin">Kelvin:</label>
+			<input type="number" id="kelvin" name="kelvin"><br>
+			<button onclick="convert()">Convert</button>
+		</div>
+    </div>
+
+		<div class="result">
+			<p id="result"></p>
+		</div>
+	</div>
+    <div align="center">
+        <br>
+        <br>
+        formuales used for converting from one unit to other:<br>
+        K = C + 273.15 <br>
+        F = C(9 ⁄ 5) + 32
+        
+    </div>
+	<script src="./temp_convt.js"></script>
+</body>
+</html>
